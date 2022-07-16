@@ -5,7 +5,7 @@ type Props = {
   onEnter: (taskName: string) => void;
 };
 
-export const AddArea = ({ onEnter}: Props) => {
+export const AddArea = ({ onEnter }: Props) => {
   const [value, setValue] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

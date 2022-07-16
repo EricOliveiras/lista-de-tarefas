@@ -4,10 +4,16 @@ import { ListItemContainer }  from './styles';
 
 type Props = {
   item: Item;
+  onDelete: (id: number) => void;
 };
 
-export const ListItem = ({ item }: Props) => {
+export const ListItem = ({ item, onDelete }: Props) => {
   const [isChecked, setIsChecked] = useState(item.done);
+
+  const deleteItem = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    onDelete(item.id);
+  };                                                            
 
   return (
     <ListItemContainer done={isChecked}>
@@ -17,8 +23,9 @@ export const ListItem = ({ item }: Props) => {
         onChange={e => setIsChecked(!isChecked)}
       />
       <label htmlFor="">{item.name}</label>
-      <button
-       type="submit"
+      <button 
+        type='button'
+        onClick={deleteItem}
       >
         X
       </button>

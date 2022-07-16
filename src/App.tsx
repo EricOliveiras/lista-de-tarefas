@@ -15,6 +15,10 @@ export const App = () => {
     setList([...list, { id: list.length + 1, name: taskName, done: false }]);
   };
 
+  const handleDeleteTask = (id: number) => {
+    setList(list.filter(item => item.id !== id));
+  };
+
   return (
     <>
       <GlobalStyles />
@@ -24,8 +28,8 @@ export const App = () => {
 
           <AddArea onEnter={handleAddTask} />
 
-          {list.map((listItem, index) => (
-            <ListItem key={index} item={listItem} />
+          {list.map(item => (
+            <ListItem key={item.id} item={item} onDelete={handleDeleteTask}/>
           ))}
 
         </Area>

@@ -27,7 +27,7 @@ export const ListItemContainer = styled.div(({done}: ContainerProps) => (
       margin-right: 15px;
       border-radius: 5px;
     }
-
+    
     button {
       padding: 2px 20px;
       border-radius: 5px;
@@ -36,7 +36,7 @@ export const ListItemContainer = styled.div(({done}: ContainerProps) => (
       border: none;
       font-size: 1.2rem;
     }
-
+  
     button:hover {
       cursor: pointer;
       background-color: #7D001E;
