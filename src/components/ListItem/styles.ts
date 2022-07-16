@@ -29,17 +29,22 @@ export const ListItemContainer = styled.div(({done}: ContainerProps) => (
     }
     
     button {
-      padding: 2px 20px;
-      border-radius: 5px;
-      background-color: #9F231C;
-      color: #fff;
-      border: none;
-      font-size: 1.2rem;
-    }
-  
-    button:hover {
+      dysplay: flex;
+      background-color: unset;
+      border: unset;
+      color: red;
+      font-size: 1.6rem;
       cursor: pointer;
-      background-color: #7D001E;
+    }
+
+    button:hover {
+      color: #fff;
+    }
+      
+    button svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   `
 ))

@@ -9,7 +9,8 @@ export const AddArea = ({ onEnter }: Props) => {
   const [value, setValue] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
+    const { value } = e.target;
+    setValue(value);
   };
 
   const handleKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
