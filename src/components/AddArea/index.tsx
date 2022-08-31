@@ -29,6 +29,7 @@ export const AddArea = ({ onEnter }: Props) => {
         onChange={handleChange}
         onKeyUp={handleKeyUp}
       />
+      <p>Pressione Enter para adicionar a tarefa</p>
     </Container>
   );
 };

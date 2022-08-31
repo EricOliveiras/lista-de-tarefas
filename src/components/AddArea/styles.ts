@@ -21,4 +21,8 @@ export const Container = styled.div`
     font-size: 1.5rem;
     flex: 1;
   }
+
+  p {
+    font-size: .9rem
+  }
 `;
