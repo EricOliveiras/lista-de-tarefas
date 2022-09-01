@@ -26,7 +26,7 @@ export const Container = styled.div`
     font-size: .9rem
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 410px) {
     p {
       visibility: hidden;
     }
