@@ -25,4 +25,10 @@ export const Container = styled.div`
   p {
     font-size: .9rem
   }
+
+  @media (max-width: 390px) {
+    p {
+      visibility: hidden;
+    }
+  }
 `;
